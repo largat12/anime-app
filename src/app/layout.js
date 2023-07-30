@@ -1,4 +1,4 @@
-'use client'
+
 import Head from 'next/head'
 import './globals.css'
 import { Rubik } from 'next/font/google'

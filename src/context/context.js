@@ -1,3 +1,4 @@
+'use client'
 import { conectionsAnime } from "@/conections/anime";
 import { conectionsDetailsAnime } from "@/conections/detailsAnime";
 import { createContext, useEffect, useState } from "react";
