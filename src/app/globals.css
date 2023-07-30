@@ -17,11 +17,95 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: #101010
+}
+
+.box-shadow-custom{
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 0.07), 0 2px 4px -1px rgb(0 0 0 / 0.04);
+}
+.recortar-texto{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.slick-list {
+  overflow: initial;
+  overflow-x: hidden;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-slider{
+  flex-direction: column;
+  display: flex;
+  align-items: inherit;
+  justify-content: left;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.slick-track {
+  display: flex;
+    
+}
+ul.slick-dots {
+  position: relative;
+  bottom: 0px;
+  margin-top: 10px;
+  justify-content: center;
+}
+.slick-dots li.slick-active {
+  background: white;
+  border-color: white;
+}
+.slick-dots li {
+  background: transparent;
+  border: 2px solid white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: transparent;
+  margin: 0px 3px;
+}
+
+ul.slick-dots[style*="display: block;"] {
+  display: flex !important;
+}
+button.slick-prev, button.slick-next {
+  position: absolute;
+  top: calc(50% - 35px);
+  background: #3c3c3c;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  color: #ffffff;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+button.slick-next {
+  right: 0px;
+}
+
+button.slick-prev {
+  left: 0px;
+}
+
+button.slick-prev[style*="display: block;"], button.slick-next[style*="display: block;"] {
+  display: flex !important;
 }
