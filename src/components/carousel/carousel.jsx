@@ -5,11 +5,13 @@ import { GroupLoading } from "./loading/groupLoading"
 import { GroupCarousel } from "./item/groupCarousel"
 
 export const Carousel = () => {
-    const { animes, searchAnime} = useContext(ContextApp)
+    const { animes} = useContext(ContextApp)
 
 
     if(animes?.result?.total === 0){
-        return <p>Sorry, we couldn't find the anime you're looking for. I try another</p>
+        return (
+            <p>Sorry, we couldn't find the anime you're looking for. I try another</p>
+        )
     }
     
 
