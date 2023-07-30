@@ -10,7 +10,7 @@ export const Carousel = () => {
 
     if(animes?.result?.total === 0){
         return (
-            <p>Sorry, we couldn't find the anime you're looking for. I try another</p>
+            <p>Sorry, we couldn`t find the anime you`re looking for. I try another</p>
         )
     }
     
