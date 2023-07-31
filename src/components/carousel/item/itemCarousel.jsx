@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { Score } from './score/score'
 
 
-export const ItemCarousel = ({item}) => {
+export const ItemCarousel = ({item, element}) => {
     return (
-        <div className="col basis-full max-w-[100%]  shrink-0 p-2 ">
+        <div className={`${element ? '' : 'basis-full'} col  max-w-[100%]  shrink-0 p-2 `}>
           <Link href={'/details/'+item.id} alt={"Details "+item.title}>
             <div className="rounded-[20px] bg-[#16181a] shadow overflow-hidden ">
               <div className=" flex flex-col">
