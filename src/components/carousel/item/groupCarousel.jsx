@@ -5,7 +5,6 @@ import { settingsSlider } from "@/helpers/slider/settingsSlider";
 
 
 export const GroupCarousel = ({animes}) => {
-  console.log(animes.result.data.length < 5)
   if(animes.result.data.length < 5){
     return (
       <div className="container w-full max-w-full flex flex-row contaner overflow-hidden justify-center">
